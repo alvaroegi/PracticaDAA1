@@ -5,9 +5,9 @@ def hanoi(n,o,d,a):
     else:
         hanoi(n-1,o,a,d)
         print("Mueve disco",n,"desde torre",o,"a torre",a)
-        hanoi(n-1, )
-        print("Mueve disco", n, "desde torre", a, "a torre", d)
         hanoi(n-1,d,a,o)
+        print("Mueve disco", n, "desde torre", a, "a torre", d)
+        hanoi(n-1,a,d,o)
 
 # Ejemplo de uso
 hanoi(2,1,2,3)
